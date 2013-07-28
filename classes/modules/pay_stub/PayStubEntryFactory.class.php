@@ -164,10 +164,13 @@ class PayStubEntryFactory extends Factory {
 
 		Debug::text('User Expense ID: '. $id , __FILE__, __LINE__, __METHOD__,10);
 
+/* leancode
 		if ( getTTProductEdition() >= PRODUCT_ENTERPRISE_25 ) {
 			$uelf = TTnew( 'UserExpenseListFactory' );
 			$result = $uelf->getById($id);
-		} else {
+		} else
+		*/
+		{
 			$id = 0;
 		}
 
